@@ -1,205 +1,439 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>《无畏契约：源能行动》一站式新手攻略</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>无畏契约：源能行动 - 新手引导</title>
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0d0d0d;
-      color: #f1f1f1;
-      line-height: 1.7;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    h1, h2, h3 {
-      font-weight: 800;
-      color: #ff4655;
-      margin-top: 40px;
-    }
-    h1 {
-      font-size: 2.6rem;
-      text-align: center;
-    }
-    h2 {
-      font-size: 2rem;
-      border-left: 6px solid #ff4655;
-      padding-left: 12px;
-      margin-bottom: 20px;
-    }
-    h3 {
-      font-size: 1.5rem;
-      color: #ffd700;
-      margin-top: 30px;
-    }
-    p, ul {
-      font-size: 1rem;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .highlight {
-      color: #00eaff;
-      font-weight: bold;
-    }
-    .section {
-      margin-bottom: 60px;
-    }
-    .tips {
-      background: #1a1a1a;
-      padding: 16px;
-      border-left: 4px solid #ff4655;
-      margin: 20px 0;
-    }
-    details {
-      background: #1e1e1e;
-      border: 1px solid #333;
-      padding: 16px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-    }
-    summary {
-      cursor: pointer;
-      font-weight: bold;
-      color: #ffd700;
-    }
-    img {
-      display: block;
-      margin: 16px auto;
-      max-width: 100%;
-      border-radius: 6px;
-    }
+    body { font-family: 'Helvetica Neue', sans-serif; line-height: 1.7; margin: 0; padding: 0; background: #111; color: #eee; }
+    .container { max-width: 960px; margin: 0 auto; padding: 2em; }
+    h1 { font-size: 2.5em; margin-bottom: 0.2em; color: #f94545; }
+    h2 { border-bottom: 2px solid #f94545; padding-bottom: 0.3em; margin-top: 2em; color: #f94545; }
+    h3 { margin-top: 1.5em; color: #ffb347; }
+    p, ul, ol { margin: 1em 0; }
+    ul, ol { padding-left: 1.5em; }
+    .section { margin-bottom: 3em; }
+    details { background: #222; padding: 1em; border-radius: 8px; margin-bottom: 1em; }
+    summary { font-weight: bold; cursor: pointer; }
+    .tips { background: #1c1c1c; border-left: 4px solid #f94545; padding: 1em; margin-top: 1em; border-radius: 4px; color: #ccc; }
+    .image-note { color: #888; font-size: 0.9em; margin-top: 0.5em; }
+    .guide-block { background: #1e1e1e; padding: 1em; border-left: 4px solid #ff9800; margin: 2em 0; border-radius: 6px; }
+    .guide-block h2 { border: none; color: #ffc107; margin-top: 0; }
+    .guide-block p { margin: 0.5em 0; }
+    .image-placeholder { background: #333; padding: 0.5em; color: #999; font-style: italic; margin-top: 0.3em; border-left: 3px dashed #555; padding-left: 1em; }
+    .hero-card { background: #2a2a2a; padding: 1.5em; margin: 1em 0; border-radius: 8px; border-left: 4px solid #4CAF50; }
+    .hero-card h3 { color: #4CAF50; margin-top: 0; }
+    .skill-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1em; margin: 1em 0; }
+    .skill-item { background: #333; padding: 1em; border-radius: 6px; }
+    .skill-item h4 { color: #ffb347; margin-top: 0; }
+    .weapon-table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    .weapon-table th, .weapon-table td { border: 1px solid #444; padding: 0.5em; text-align: left; }
+    .weapon-table th { background: #333; color: #ffb347; }
+    .map-strategy { background: #2a2a2a; padding: 1.5em; margin: 1em 0; border-radius: 8px; border-left: 4px solid #2196F3; }
+    .map-strategy h3 { color: #2196F3; margin-top: 0; }
+    .training-schedule { background: #1c1c1c; padding: 1em; border-radius: 6px; margin: 1em 0; }
+    .training-schedule h4 { color: #ff9800; }
+    .reward-section { background: linear-gradient(135deg, #1e3c72, #2a5298); padding: 1.5em; border-radius: 8px; margin: 2em 0; }
+    .reward-section h3 { color: #ffd700; margin-top: 0; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>《无畏契约：源能行动》一站式新手攻略</h1>
+    <header>
+      <h1>无畏契约：源能行动 - 新手引导</h1>
+      <p>一站式入门手册，快速掌握玩法、技能、经济、战术与模式。</p>
+    </header>
 
-    <div class="section">
-      <h2>一、5分钟快速上手核心</h2>
-<div class="tips"><strong>图示建议：</strong>在此处添加“爆破对抗结构图”或“进攻/防守回合流程图”，用于帮助新手快速理解整体玩法节奏。</div>
-      <!-- 建议插入一张“爆破对抗结构图”或“进攻/防守回合示意图”，帮助新手快速建立整体对抗流程的概念 -->
-      <p><span class="highlight">玩法概览：</span>爆破回合制对抗，攻守互换，先赢13局者获胜。</p>
-      <p><span class="highlight">操作精髓：</span>必须“急停再射击”才能保证命中率，边移动边开枪会完全打偏。</p>
-      <p><span class="highlight">新手任务：</span>进入靶场完成“30连杀移动靶挑战”，掌握急停机制。</p>
-      <div class="tips">
-        <strong>误区提醒：</strong>别一上来就打排位！先练枪、熟悉地图和角色技能。
+    <div class="guide-block">
+      <h2>❓ 感到迷茫？先解决你的认知焦虑</h2>
+      <p><strong>玩法是什么？怎么玩？</strong> 这里是爆破回合制射击游戏，你将操控英雄使用技能 + 枪械进行战术对抗。</p>
+      <p><strong>角色怎么选？技能会不会太难？</strong> 本文推荐适合新手的英雄，并详细拆解技能用途。</p>
+      <p><strong>地图看不懂、走位迷路？</strong> 别担心，我们有 35 秒法则详解与实用图示，帮你厘清打法节奏。</p>
+    </div>
+
+    <div class="guide-block">
+      <h2>✅ 拿不准就抄作业：推荐选谁怎么玩</h2>
+      <p>盖可、夜露、蝰蛇三大新手角色各有千秋，文中详细列出适配打法。</p>
+      <p>从第一局该买什么武器、走哪条路、打点顺序，到回合制经济技巧应对，我们都整理好了。</p>
+    </div>
+
+    <div class="guide-block">
+      <h2>�� 想变强？这里有进阶技巧与扩展内容</h2>
+      <p>掌握地图机制、技能连携、经济调度、站位策略，一步步升级你的战术意识。</p>
+      <p>你还将发现彩蛋奖励、特训模式、GIF 教学与图示辅助，让学习更高效。</p>
+    </div>
+
+    <h2>一、基础认知与操作设置</h2>
+    
+    <h3>🎯 精准射击核心机制</h3>
+    <div class="tips">
+      <p><strong>急停射击机制：</strong>移动时射击会导致弹道严重扩散，必须完全停止移动才能保证精准度。看到敌人后立即松开移动键（约0.2秒完全停止），然后开火射击。</p>
+    </div>
+
+    <h3>⚙️ 画面设置优化</h3>
+    <ul>
+      <li><strong>性能优先：</strong>关闭阴影和垂直同步，反锯齿开4x</li>
+      <li><strong>帧率设置：</strong>选择"性能优先"或"自定义低画质"，确保流畅运行</li>
+      <li><strong>小地图设置：</strong>缩放拉满，关闭"玩家保持中心"选项</li>
+      <li><strong>准星样式：</strong>推荐绿色/青色十字，适中大小</li>
+      <li class="image-placeholder">插图建议：展示设置界面截图，突出推荐设置项</li>
+    </ul>
+
+    <h3>�� 灵敏度设置</h3>
+    <ul>
+      <li><strong>普通灵敏度：</strong>20-30（按习惯微调）</li>
+      <li><strong>开镜灵敏度：</strong>15-25，略低于常规</li>
+      <li><strong>调整方法：</strong>15秒定位法则 - 在靶场连续射击移动靶，若准星总落后目标则提升5%，反之降低3%</li>
+      <li><strong>建议开启：</strong>"陀螺仪瞄准"辅助小幅转动准星</li>
+    </ul>
+
+    <h3>🔧 按键设置优化</h3>
+    <ul>
+      <li><strong>开火键位置：</strong>右移15%防止误触</li>
+      <li><strong>跳跃键：</strong>放置在屏幕左上角，配合左手拇指滑动实现"跳枪"技巧</li>
+      <li><strong>功能开启：</strong>"智能压枪辅助"和"自动拾取弹药"</li>
+      <li><strong>终极技能：</strong>设置为"双指长按"触发，避免混战时误放</li>
+    </ul>
+
+    <h2>二、新手角色推荐与打法</h2>
+    
+    <h3>�� 英雄分类与新手推荐</h3>
+    <p>游戏中的英雄分为<strong>决斗、先锋、控场、哨卫</strong>四大类型，新手建议从决斗位和先锋位入手。</p>
+
+    <div class="hero-card">
+      <h3>🏆 新手推荐阵容</h3>
+      <div class="skill-list">
+        <div class="skill-item">
+          <h4>捷风（突破手）</h4>
+          <p>高机动性，适合快速切入战场</p>
+        </div>
+        <div class="skill-item">
+          <h4>猎枭（侦察）</h4>
+          <p>提供敌方位置信息</p>
+        </div>
+        <div class="skill-item">
+          <h4>幽影（控场）</h4>
+          <p>封锁区域和视野</p>
+        </div>
+        <div class="skill-item">
+          <h4>芮娜（治疗）</h4>
+          <p>团队续航保障</p>
+        </div>
+        <div class="skill-item">
+          <h4>铁臂（重装）</h4>
+          <p>吸收伤害和控场</p>
+        </div>
       </div>
     </div>
 
-    <div class="section">
-      <h2>二、设置推荐与操作优化</h2>
+    <h3>�� 炼狱技能详解</h3>
+    <p>炼狱是控场型英雄的典型代表，其技能组合极具战术价值：</p>
+    <ul>
+      <li><strong>一技能：</strong>投掷增益信标，范围内友军获得移速和射速加成</li>
+      <li><strong>二技能：</strong>释放烟幕弹封锁视野，适合进攻突破</li>
+      <li><strong>三技能：</strong>燃烧榴弹造成区域持续伤害</li>
+      <li><strong>终极技能：</strong>范围伤害，适合敌方密集防守时使用</li>
+    </ul>
+
+    <h3>🔄 技能循环技巧</h3>
+    <div class="tips">
+      <p><strong>永动机循环：</strong>以治疗英雄"圣祈"为例，其治疗光球（Q技能）命中队友后，可使屏障（E技能）冷却缩短3秒，形成"治疗-护盾-治疗"的循环。</p>
+      <p><strong>技能欺诈战术：</strong>故意在假埋包点释放侦察技能，引诱对手暴露位置。在"源工重镇"地图使用该策略，可使防守方误判率提升47%。</p>
+    </div>
+
+    <p class="image-placeholder">插图建议：展示三角色技能图+打法标签（图文结合）</p>
+
+    <h2>三、35秒法则与常见地图讲解</h2>
+    
+    <h3>⏰ 35秒法则详解</h3>
+    <p>拆解"35秒法则"：每回合前35秒的站位决定了攻守节奏。安装炸弹后，防守方回防需35秒路程。此时进攻方应布置"交叉火力陷阱"。</p>
+
+    <div class="map-strategy">
+      <h3>🗺️ 源工重镇地图攻略</h3>
       <ul>
-        <li>画质设置：关闭阴影 & 垂直同步，开启反锯齿，帧率优先。</li>
-        <li>灵敏度推荐：常规20-30，开镜建议15-25。</li>
-        <li>准星样式：绿色/青色十字最清晰，小地图拉满、关闭玩家居中。</li>
-        <li>开火键移动15%，终极技能建议双指长按。</li>
+        <li><strong>A区进攻：</strong>分兵夹击——抢占树屋制高点+毒雾封锁中路+清理甜香后点</li>
+        <li><strong>B区进攻：</strong>两人清理长廊，三人从二楼跳下压制，配合燃烧弹破坏机枪阵地</li>
+        <li><strong>中央能量柱：</strong>是战术核心，合理运用可以遮挡敌方视线</li>
       </ul>
-      <div class="tips">
-        <strong>校准法：</strong>“15秒定位法”：靶场中连续移动射击，准星追不上目标就提灵敏度，追过头就降。
+    </div>
+
+    <div class="map-strategy">
+      <h3>❄️ 极地寒港攻防策略</h3>
+      <ul>
+        <li><strong>进攻方：</strong>利用上层通道视野优势，烟幕弹封锁中央广场，瞬移技能快速占点</li>
+        <li><strong>防守方：</strong>B点放置冰墙分割战场，配合陷阱探测器形成交叉火力</li>
+      </ul>
+    </div>
+
+    <div class="map-strategy">
+      <h3>🌃 霓虹町隐藏卡点位</h3>
+      <ul>
+        <li>A点"咖啡机透视窗"</li>
+        <li>B通道"自动贩卖机掩体"</li>
+        <li>中路"霓虹灯箱制高点"</li>
+      </ul>
+    </div>
+
+    <p>地图选择推荐：裂变之城/冰盒/日落湾（新手友好）。</p>
+    <p class="image-placeholder">插图建议：GIF演示35秒内打法节奏 + 地图高亮图</p>
+
+    <h2>四、爆破模式规则与胜利条件</h2>
+    
+    <h3>💣 爆破模式核心机制</h3>
+    <p>进攻方需安装爆能器（炸弹）并引爆，防守方则需阻止安装或拆除已安放的爆能器。游戏采用回合制经济系统。</p>
+
+    <h3>�� 回合制对抗规则</h3>
+    <ul>
+      <li>每局分为进攻方和防守方，12回合后攻守互换，先赢得13回合的队伍获胜</li>
+      <li>若12-12平局，则进入加时赛（先赢2回合者胜）</li>
+    </ul>
+
+    <h3>🎯 胜利条件详解</h3>
+    <div class="skill-list">
+      <div class="skill-item">
+        <h4>进攻方获胜方式</h4>
+        <ul>
+          <li>成功引爆爆能器：在A/B/C点安装爆能器，并确保其爆炸（倒计时约45秒）</li>
+          <li>全歼防守方：在爆能器未安装或未爆炸前击杀所有敌方玩家</li>
+        </ul>
+      </div>
+      <div class="skill-item">
+        <h4>防守方获胜方式</h4>
+        <ul>
+          <li>阻止爆能器安装：在100秒回合内阻止进攻方安包</li>
+          <li>拆除已安装的爆能器：爆能器安装后，防守方需在7秒内拆除（可分段拆）</li>
+          <li>全歼进攻方：在进攻方未成功引爆爆能器前击杀所有敌人</li>
+        </ul>
       </div>
     </div>
 
-    <div class="section">
-      <h2>三、英雄定位与技能节奏</h2>
-<div class="tips"><strong>图示建议：</strong>添加“推荐阵容角色卡片图”，展示新手英雄形象及职责分工，提升阵容理解。</div>
-      <!-- 建议添加一张“推荐阵容角色卡片图”，展示4个新手英雄的形象及职责，有助于理解战术分工 -->
-      <p>角色类型：决斗 / 先锋 / 控场 / 辅助。</p>
-      <p><span class="highlight">新手推荐组合：</span>捷风（突进）+猎枭（侦查）+幽影（控场）+芮娜（奶）</p>
-      <p><strong>技能套路示范：</strong> 圣祈“治疗光球 + 屏障盾”循环，形成续航-护盾-续航节奏。</p>
-    </div>
+    <h3>⚡ 英雄技能机制</h3>
+    <ul>
+      <li>每位英雄拥有4个技能（3个小技能+1个终极技能）</li>
+      <li>小技能可购买充能，终极技能需通过击杀、拆包或拾取地图能量球充能</li>
+    </ul>
 
-    <div class="section">
-      <h2>四、经济管理与枪械选择</h2>
-      <ul>
-        <li>经济局推荐：蜂刺（1100币，近距离速杀）或警长（高爆发）</li>
-        <li>主力武器：幻影步枪稳定、骇灵带消音适合偷袭</li>
-        <li>首局建议买“半甲”优先保命，连败时考虑技能局翻盘</li>
-      </ul>
-      <div class="tips">
-        <strong>经济提醒：</strong>存活至回合结束可“保枪”，减少下一局开销！
+    <ul>
+      <li>进攻方目标：布置爆弹 & 阻止拆除。</li>
+      <li>防守方目标：拖延时间 / 拆除爆弹。</li>
+      <li class="image-placeholder">插图建议：爆破模式流程图，强调攻守双方关键节点</li>
+    </ul>
+
+    <h2>五、经济机制与买枪建议</h2>
+    
+    <h3>�� 经济系统详解</h3>
+    <p>游戏采用回合经济系统，输方每回合基础经济1900，连败递增（最高2900）。合理的经济管理是获胜关键。</p>
+
+    <h3>🔫 武器推荐组合</h3>
+    <table class="weapon-table">
+      <thead>
+        <tr>
+          <th>武器类型</th>
+          <th>推荐武器</th>
+          <th>价格</th>
+          <th>适用场景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>主武器</td>
+          <td>幻影步枪（中距离稳定）+ 短剑冲锋枪（近战爆发）</td>
+          <td>2900/1600</td>
+          <td>标准局</td>
+        </tr>
+        <tr>
+          <td>手枪局</td>
+          <td>鬼魅（消音偷袭）或警长（高伤狙击）</td>
+          <td>500/800</td>
+          <td>经济局</td>
+        </tr>
+        <tr>
+          <td>经济局</td>
+          <td>蜂刺冲锋枪（1100誉币，近距离秒杀无甲敌人）</td>
+          <td>1100</td>
+          <td>经济劣势</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>💡 经济策略</h3>
+    <ul>
+      <li><strong>首局必买：</strong>"半甲"提升存活率</li>
+      <li><strong>连败策略：</strong>连败两局后，第三局选择"正义手枪+全技能"打经济差翻盘</li>
+      <li><strong>拆除时机：</strong>第三阶段（白光闪烁）是最佳撤离时机，避免被回防击杀丢枪</li>
+      <li><strong>保枪技巧：</strong>存活至回合结束能保留武器，防止经济崩盘</li>
+    </ul>
+
+    <h3>⚔️ 冲锋枪双雄对比</h3>
+    <div class="skill-list">
+      <div class="skill-item">
+        <h4>蜂刺</h4>
+        <p>售价1100，超高射速（18发/秒），适合经济局和狭窄地形突袭</p>
+      </div>
+      <div class="skill-item">
+        <h4>骇灵</h4>
+        <p>售价1600，自带消音器，中距离点射稳定，适合战术偷袭</p>
       </div>
     </div>
 
-    <div class="section">
-      <h2>五、地图战术与攻防策略</h2>
-<div class="tips"><strong>图示建议：</strong>插入“地图俯视图+关键点位标注图”，特别突出源工重镇和极地寒港A/B区动线，帮助玩家部署战术。</div>
-      <!-- 建议插入“地图俯视图+关键点位图”，特别是源工重镇与极地寒港的A/B区动线，有助于理解战术部署 -->
-      <p><strong>源工重镇：</strong> A区分兵夹击 / B区高空突袭，中央能量柱是战术核心。</p>
-      <p><strong>极地寒港：</strong> 利用高地烟封中路，B点布置陷阱墙。</p>
-      <p><strong>卡点秘籍：</strong> 咖啡窗透视 / 霓虹灯箱制高点 / 自动贩卖机掩体</p>
-    </div>
+    <p>前期优先轻甲 + 辅枪，胜利回合建议叠加护甲。</p>
+    <p class="image-placeholder">插图建议：经济推荐表 / 回合购买示意图</p>
 
-    <div class="section">
-      <h2>六、团队协作与语音报点</h2>
-<div class="tips"><strong>图示建议：</strong>添加“地图术语图例”或报点热区图，帮助新人理解语音报点常用术语及其位置。</div>
-      <!-- 建议插入“报点术语图例”，如地图上标注常用术语位置（如A连接、B长廊等），以提升理解效率 -->
+    <h2>六、技能机制讲解与搭配建议</h2>
+    
+    <h3>🎯 技能类型分类</h3>
+    <ul>
+      <li><strong>侦查：</strong>获取敌方位置信息</li>
+      <li><strong>干扰：</strong>影响敌方视野和移动</li>
+      <li><strong>爆破：</strong>造成直接伤害</li>
+      <li><strong>控制：</strong>限制敌方行动</li>
+    </ul>
+
+    <h3>🤝 团队配合技巧</h3>
+    <div class="tips">
+      <h4>语音报点三要素：</h4>
       <ul>
-        <li><span class="highlight">报点三要素：</span>位置（A二楼）+数量（2人）+状态（满血）</li>
-        <li>技能联动：烟雾 + 火墙 / 闪现 + 治疗 / 毒墙 + 侦察</li>
-        <li>残局处理策略：“保枪” or “强拆”要看人数差+时间判断</li>
+        <li><strong>位置：</strong>"A点二楼"（精确到具体区域）</li>
+        <li><strong>数量：</strong>"2人，1狂徒1幻影"（武器类型影响战术选择）</li>
+        <li><strong>状态：</strong>"满血/残血"（决定是否需要支援）</li>
       </ul>
     </div>
 
-    <div class="section">
-      <h2>七、排位机制与进阶建议</h2>
-      <p>排位解锁：需10级并拥有至少5个英雄。</p>
-      <p><strong>定级机制：</strong>5场定级，系统根据KDA/生存率/支援率打分。</p>
-      <p><strong>隐藏分建议：</strong>高KD + 报点积极 = 跳段机会！</p>
+    <h3>🔥 终极技能配合范例</h3>
+    <ul>
+      <li>炼狱烟幕弹+捷风逐星：双重视野封锁</li>
+      <li>蝰蛇毒墙+不死鸟火墙：形成熔岩陷阱</li>
+    </ul>
+
+    <p class="image-placeholder">插图建议：技能展示GIF + 多人联动演示画面</p>
+
+    <h2>七、特殊模式玩法简介</h2>
+    
+    <details>
+      <summary>🧱 死斗模式（团队死斗）</summary>
+      <p><strong>目标：</strong>率先达成100击杀，玩家无限复活，战斗集中在中心区域。</p>
+      <p><strong>武器解锁：</strong>分阶段解锁（初始手枪→全武器开放），适合练枪。</p>
+      <p><strong>练枪建议：</strong>每日完成"移动靶30杀挑战"，锻炼反应速度。</p>
+    </details>
+    
+    <details>
+      <summary>⚡ 超速冲点（快节奏模式）</summary>
+      <p><strong>规则：</strong>先赢5回合者胜，经济简化，节奏更快。</p>
+      <p><strong>特点：</strong>高节奏乱斗，有助于提升枪感。</p>
+    </details>
+    
+    <details>
+      <summary>🎯 辐能抢攻战（随机武器+强化球）</summary>
+      <p><strong>机制：</strong>地图随机掉落强化球（如治疗、护甲等），武器随机分配，先赢4回合胜。</p>
+      <p><strong>娱乐性：</strong>轻松对局也能产出高光。</p>
+    </details>
+
+    <h2>八、进阶技巧与训练方法</h2>
+    
+    <h3>🎯 急停射击训练方法</h3>
+    <div class="training-schedule">
+      <h4>基础练习</h4>
+      <p>开启准星"外线"及"移动误差"显示，观察外框收缩至最小状态时开枪</p>
+      
+      <h4>进阶练习</h4>
+      <p>移动时快速点击反方向键抵消惯性，在按键瞬间开枪</p>
     </div>
 
-    <div class="section">
-      <h2>八、福利任务与联动奖励</h2>
-      <p>完成新手任务可快速解锁角色与皮肤。</p>
-      <p><strong>LOL联动奖励：</strong>绑定账号可得限定皮肤 & 挂饰！</p>
-    </div>
+    <h3>🎮 摆射技巧</h3>
+    <ul>
+      <li>发现敌人后边移动边用准心追踪目标</li>
+      <li>瞄准完成的瞬间急停开枪</li>
+      <li>未击杀则立刻重启移动-瞄准循环</li>
+    </ul>
 
-    <div class="section">
-      <h2>📦 拓展内容专区</h2>
-      <details>
-        <summary>🔫 死斗模式玩法详解</summary>
-        <p>死斗是无畏契约中的练枪模式，目标是达成100击杀，无限复活，快速熟悉地图与枪感。</p>
-        <ul>
-          <li>初始武器为手枪，击杀后解锁更强武器</li>
-          <li>建议新手在此模式练习准星控制与转身反应</li>
-        </ul>
-      </details>
+    <h3>📅 每日训练建议</h3>
+    <ul>
+      <li>靶场完成"移动靶30杀挑战"</li>
+      <li>死斗模式锻炼反应速度（目标100击杀）</li>
+      <li>分段式预瞄练习：瞄墙→小身位Peek→调整</li>
+    </ul>
 
-      <details>
-        <summary>🧠 35秒法则地图讲解（含图）</summary>
-        <p>炸弹安装后，防守方从出生点回防约需35秒。进攻方应利用此间隙布置“死亡走廊”。</p>
-        <img src="https://cdn.example.com/map_35s_strategy.jpg" alt="35秒法则战术图">
-        <p>如图所示，建议将烟幕封锁回防路径，并配合侦察无人机。</p>
-      </details>
+    <h2>九、排位赛与匹配进阶</h2>
+    
+    <h3>�� 排位赛解锁条件</h3>
+    <ul>
+      <li><strong>角色等级：</strong>需达到10级（部分版本要求20场普通模式）</li>
+      <li><strong>英雄数量：</strong>至少解锁5位英雄（可通过任务或购买获取）</li>
+      <li><strong>定级赛：</strong>完成5场定级赛，系统根据表现分配初始段位</li>
+    </ul>
 
-      <details>
-        <summary>🧬 炼狱技能连携教学</summary>
-<div class="tips"><strong>图示建议：</strong>当前为GIF动图，若能替换为帧注释更明确的技能组合展示，将提升教学效果。</div>
-        <!-- 已嵌入GIF，若能替换为更清晰动图并加入帧注释，将进一步增强技能释放顺序的理解 -->
-        <p>炼狱拥有强控+封锁能力，可与捷风组合快速突破防线：</p>
-        <ul>
-          <li>使用烟幕封住敌方视野</li>
-          <li>捷风跳入区域释放终极 → 快速清场</li>
-        </ul>
-        <img src="https://cdn.example.com/hero_combos.gif" alt="技能联动GIF">
-      </details>
+    <h3>�� 隐藏分机制</h3>
+    <ul>
+      <li>表现优异（如高KD、关键击杀）可跳段（如青铜3→白银2）</li>
+      <li>消极比赛（挂机/送人头）会降低积分获取效率</li>
+    </ul>
 
-      <details>
-        <summary>🧰 经济局装备选择建议</summary>
-        <p>经济局时，资金有限，推荐以下组合：</p>
-        <ul>
-          <li>蜂刺 + 全技能（近战速杀）</li>
-          <li>警长 + 闪光弹（高爆发+控制）</li>
-        </ul>
-        <p>避免“裸装上阵”，哪怕买一件半甲也能极大提升生存。</p>
-      </details>
+    <h3>⚖️ 排位赛规则</h3>
+    <ul>
+      <li><strong>胜利条件：</strong>13回合胜利（12-12平局进入加时，领先2回合者胜）</li>
+      <li><strong>组队限制：</strong>单排/双排差距≤1个大段，三排差距≤2个大段</li>
+      <li><strong>积分机制：</strong>每局胜负影响段位分，表现优异可额外加分</li>
+    </ul>
+
+    <h3>🚀 上分阶段节奏</h3>
+    <ul>
+      <li>开局匹配熟悉地图+节奏（前10把别打排位）</li>
+      <li>熟练掌握1个团队型角色 + 1个输出型角色</li>
+      <li>找朋友双排或三排上分，开麦沟通效率高</li>
+      <li>打"控制+输出+功能"搭配阵容胜率更稳定</li>
+    </ul>
+
+    <h2>扩展内容专区</h2>
+    
+    <details>
+      <summary>🔫 死斗模式玩法详解</summary>
+      <p>适用练枪节奏拆解 + 热区地图分析。</p>
+      <p><strong>练枪技巧：</strong>利用无限复活机制，专注提升瞄准精度和反应速度。</p>
+    </details>
+    
+    <details>
+      <summary>🧠 35秒法则地图讲解（含图）</summary>
+      <p>各主流地图的35秒高效打法节奏图解。</p>
+      <p><strong>战术要点：</strong>掌握时间节点，合理布置交叉火力陷阱。</p>
+    </details>
+    
+    <details>
+      <summary>🔥 炼狱技能连携教学（含GIF）</summary>
+      <p>盖可 + 夜露的高能配合实战展示。</p>
+      <p><strong>配合技巧：</strong>技能释放时机和位置选择的重要性。</p>
+    </details>
+    
+    <details>
+      <summary>�� 经济局装备选择建议</summary>
+      <p>经济劣势时的高性价比装备搭配参考。</p>
+      <p><strong>策略要点：</strong>如何在经济劣势下最大化团队价值。</p>
+    </details>
+
+    <details>
+      <summary>��️ 地图战术深度解析</summary>
+      <p>各地图的详细战术分析和卡点位置。</p>
+      <p><strong>重点内容：</strong>进攻路线、防守布阵、关键点位控制。</p>
+    </details>
+
+    <details>
+      <summary>🎯 枪法训练进阶指南</summary>
+      <p>从基础瞄准到高级技巧的完整训练体系。</p>
+      <p><strong>训练方法：</strong>靶场练习、实战应用、技巧进阶。</p>
+    </details>
+
+    <div class="reward-section">
+      <h3>🎁 新手必领福利</h3>
+      <p><strong>活动奖励丰富：</strong>完成新手任务快速解锁新角色和皮肤，别错过！</p>
+      
+      <h4>�� LOL联动奖励</h4>
+      <p>绑定《英雄联盟》账号并完成基础任务，可获得：</p>
+      <ul>
+        <li>小小特工吊坠（联动限定）</li>
+        <li>英雄联盟联动宝箱（必得皮肤或英雄）</li>
+        <li>限定皮肤：渠道预约限定皮肤</li>
+      </ul>
+      
+      <p><strong>�� 小贴士：</strong>初期多做"训练场-基础练枪"，熟悉灵敏度后再上排位。</p>
     </div>
   </div>
 </body>
